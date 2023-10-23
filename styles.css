@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(186, 43, 226);
+    }
+   
+    .nav-nav{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    h1,h2,h3 {
+        font-style: 0;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 0%;
+    }
+        @keyframes example {
+            0%   {color: rgb(255, 132, 2);}
+            25%  {color: yellow;}
+            50% {color: rgb(78, 247, 5);}
+            100%  {color: rgb(14, 208, 238);}
+          }
+          h1 {
+            padding-block: 0%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-size: large;
+            background-color: rgb(79, 73, 78);
+            animation-name: example;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+          }
+    
+    image {
+        border:radius 10px
+    }
+    nav{
+        border:20px solid rgb(127, 160, 177);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-content: space-around;
+        
+    }
+    .nav a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+        
+      }
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        max-width: 150px; /* Task 5: Set image size */
+        border: 2px solid black; /* Task 5: Add a border to images */
+    }
+    p {
+        color: black; /* Task 5: Set text color */
+        padding: 10px; /* Task 5: Add padding to paragraphs */
+    }
+    /* Task 6: Pseudo Class */
+    .nav :hover {
+        background-color: red;
+    }
+    /* Task 6: Pseudo Element */
+    
+    *{
+        margin: 0% ;
+        /* padding: auto; */
+    }
+    table{
+        border: 5p;
+
+    }
+    section{
+        height: 100px;
+        max-width: 150px; /* Task 5: Set image size */
+        
+    }
+
+    
+    .img1 {
+        display: flex;
+        /* grid-template-columns: auto auto auto; */
+        justify-content: center;
+        align-content: center;
+        /* justify-content: space-around; */
+    }
+    .img2 {
+        width: 200px;
+        height: 200px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        /* justify-content: space-around; */
+    }
+    form {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .product {
+        padding: auto;
+        text-align: center;
+    }
+    #display {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+@media (min-width : 998px){
+    #display {
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+       .img1 {
+        display: flex;
+        /* grid-template-columns: auto auto auto; */
+        justify-content: center;
+        align-content: center;
+        /* justify-content: space-around; */
+    }
+    .img2 {
+        /* width: 200;
+        height: 200; */
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        /* justify-content: space-around; */
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 300px;
+    }
+    body{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto ;
+}
+
+.heading{
+   grid-row: 2;
+   grid-column: 1/4;
+}
